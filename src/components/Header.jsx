@@ -5,6 +5,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo-container">
+          <img src='/logo.png' className='logo-img'></img>
           <span className="logo-text">Deuda Interna</span>
         </div>
         <nav>
