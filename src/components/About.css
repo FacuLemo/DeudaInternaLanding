@@ -1,0 +1,9 @@
+.about-section {
+  background-color: var(--primary-color);
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}

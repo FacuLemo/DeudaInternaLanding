@@ -1,5 +1,5 @@
-import React from 'react';
-'/home/nazareno/Downloads/Autonomía Indígena, un proyecto que impulsa el desarrollo inclusivo _ Ayuda en Acción - ONG (online-video-cutter.com).mp4'
+import './About.css';
+
 const About = () => {
   return (
     <section id="about" className="section about-section">
