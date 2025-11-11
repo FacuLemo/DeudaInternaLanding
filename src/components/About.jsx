@@ -1,15 +1,22 @@
-import './About.css';
+import "./About.css";
+import MercadoPagoButton from "./ButtonMercadoPago";
 
 const About = () => {
   return (
     <section id="about" className="section about-section">
       <h2>Nuestra Misión</h2>
       <p>
-        En Deuda Interna, creemos firmemente en la justicia social y en la equidad.
-        Nuestra misión es abordar las desigualdades estructurales que afectan a nuestras comunidades,
-        trabajando incansablemente para crear oportunidades y dar voz a quienes han sido marginados.
-        Este es un texto de ejemplo para que puedas reemplazarlo con tu contenido real.
+        Somos ONG sin fines de lucro que trabaja junto a Pueblos Originarios de
+        la Argentina. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo voluptas perspiciatis reprehenderit, rerum sapiente tenetur
+        incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium ducimus animi expedita maiores blanditiis incidunt ad
+        tenetur aut alias vel, magnam, consectetur atque voluptas possimus
+        molestiae eius explicabo harum tempora?
       </p>
+      <div>
+        <MercadoPagoButton/>
+      </div>
     </section>
   );
 };

@@ -12,10 +12,9 @@ const Hero = () => {
         playsInline
       />
       <div className="hero-content">
-
         <img src='/full-logo.png' className='hero-logo'></img>
         <h1 className="hero-title">FUNDACIÓN DEUDA INTERNA</h1>
-        <p className="hero-subtitle">Trabajando por un futuro más justo para todos.</p>
+        <p className="hero-subtitle">Somos ONG sin fines de lucro que trabaja junto a Pueblos Originarios de la Argentina.</p>
         <a href="#about" className="hero-button">Conoce más</a>
       </div>
     </section>

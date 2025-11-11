@@ -24,7 +24,7 @@ const InstagramFeed = () => {
     <section style={{ display: 'flex', justifyContent: 'center', marginTop: 10 }}>
       <blockquote
         className="instagram-media"
-        data-instgrm-permalink="https://www.instagram.com/deigamer_original/"
+        data-instgrm-permalink="https://www.instagram.com/somosfuerzainterna/"
         data-instgrm-version="12"
         style={{
           background: '#FFF',

@@ -1,0 +1,69 @@
+.mp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: 15px;
+    line-height: 1;
+    color: white;
+    background: linear-gradient(180deg, #00b0ea 0%, #008ed6 100%);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+    }
+    
+    
+    .mp-button:focus {
+    outline: 3px solid rgba(0,158,214,0.25);
+    outline-offset: 2px;
+    }
+    
+    
+    .mp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+    }
+    
+    
+    .mp-logo {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    }
+    
+    
+    .mp-logo svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+    
+    
+    .mp-text {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 0.2px;
+    }
+    
+    
+    /* Small / compact variant */
+    .mp-button.mp-compact {
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    }
+    
+    
+    /* Disabled look (if you want to disable via CSS class) */
+    .mp-button[aria-disabled="true"],
+    .mp-button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    transform: none;
+    box-shadow: none;
+    }
