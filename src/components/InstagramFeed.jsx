@@ -21,7 +21,7 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section style={{ display: 'flex', justifyContent: 'center', marginTop: 10 }}>
+    <section style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/somosfuerzainterna/"

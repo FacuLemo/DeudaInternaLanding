@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import InstagramFeed from "./components/InstagramFeed";
+
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import FacebookFeed from "./components/FacebookFeed";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        <InstagramFeed />
-        <FacebookFeed />
+        <ProjectShowcase title="Agua" body="Agua para todos.etc Lorem lorem" />
+        <ProjectShowcase title="Aire" body="Aire para todos.etc Lorem lorem" inverted={true} />
         <Contact />
       </main>
       <Footer />

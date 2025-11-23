@@ -1,5 +1,6 @@
 .contact-section {
   background-color: var(--primary-color);
+  margin-bottom: 12px;
 }
 
 .contact-info {
@@ -10,4 +11,10 @@
 .contact-info a {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
