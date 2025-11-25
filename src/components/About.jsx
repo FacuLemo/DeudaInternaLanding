@@ -14,9 +14,7 @@ const About = () => {
         tenetur aut alias vel, magnam, consectetur atque voluptas possimus
         molestiae eius explicabo harum tempora?
       </p>
-      <div>
-        <MercadoPagoButton/>
-      </div>
+      
     </section>
   );
 };
