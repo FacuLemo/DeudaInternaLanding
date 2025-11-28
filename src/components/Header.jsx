@@ -13,7 +13,6 @@ const Header = () => {
       <div className="header-container">
         <div className="logo-container">
           <img src='/logo.png' className='logo-img' alt="Logo de Deuda Interna" />
-          <span className="logo-text">Deuda Interna</span>
         </div>
 
         <nav className={`main-nav ${isMenuOpen ? 'nav-open' : ''}`}>

@@ -13,8 +13,10 @@ function App() {
       <main>
         <Hero />
         <About />
-        <ProjectShowcase title="Agua" body="Agua para todos.etc Lorem lorem" />
-        <ProjectShowcase title="Aire" body="Aire para todos.etc Lorem lorem" inverted={true} />
+        <ProjectShowcase title="Agua Buena" body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas perspiciatis reprehenderit, rerum sapiente tenetur incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus animi expedita maiores blanditiis incidunt ad tenetur aut alias vel, magnam, consectetur atque voluptas possimus molestiae eius explicabo harum tempora?" image="placeholder.jpg" imageAlt="Pueblos originarios" />
+        <ProjectShowcase title="Arbolar" body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas perspiciatis reprehenderit, rerum sapiente tenetur incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus animi expedita maiores blanditiis incidunt ad tenetur aut alias vel, magnam, consectetur atque voluptas possimus molestiae eius explicabo harum tempora?" inverted={true} video="placeholder_video.mp4" />
+        <ProjectShowcase title="Investigación" body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas perspiciatis reprehenderit, rerum sapiente tenetur incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus animi expedita maiores blanditiis incidunt ad tenetur aut alias vel, magnam, consectetur atque voluptas possimus molestiae eius explicabo harum tempora?" image="placeholder.jpg" imageAlt="Pueblos originarios" />
+        <ProjectShowcase title="Hospital Móvil" body=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas perspiciatis reprehenderit, rerum sapiente tenetur incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus animi expedita maiores blanditiis incidunt ad tenetur aut alias vel, magnam, consectetur atque voluptas possimus molestiae eius explicabo harum tempora?" inverted={true} video="placeholder_video.mp4" />
         <Contact />
       </main>
       <Footer />

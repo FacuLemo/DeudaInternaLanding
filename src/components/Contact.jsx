@@ -5,7 +5,7 @@ import FacebookFeed from "../components/FacebookFeed";
 const Contact = () => {
   return (
     <section id="contact" className="section contact-section">
-      <h2>Contacto</h2>
+      <h1>Contacto</h1>
       <p>
         Si quieres colaborar, donar o necesitas más información, no dudes en
         escribirnos.
