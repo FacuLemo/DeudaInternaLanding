@@ -28,18 +28,17 @@ const FacebookFeed = ({ pageUrl = "https://www.facebook.com/deudainterna" }) => 
   }, [pageUrl]);
 
   return (
-    <section style={{ display: 'flex', justifyContent: 'center', marginTop: 20, marginBottom:20,}}>
+    <section style={{ display: 'flex', justifyContent: 'center'}}>
       {!loaded && <FacebookSkeleton />}
       <div
         className="fb-page"
         data-href={pageUrl}
         data-tabs="timeline"
-        data-width="540"
         data-small-header="false"
         data-adapt-container-width="false"
         data-hide-cover="false"
         data-show-facepile="true"
-        style={{ display: loaded ? 'block' : 'none' }}
+        style={{ display: loaded ? 'block' : 'none'}}
       >
         <blockquote
           cite={pageUrl}
@@ -58,7 +57,6 @@ const FacebookSkeleton = () => {
       style={{
         width: 500,
         maxWidth: '90%',
-       
         background: '#FFF',
         borderRadius: 8,
         boxShadow: '0 1px 8px rgba(0,0,0,0.1)',
@@ -70,8 +68,7 @@ const FacebookSkeleton = () => {
             width: 40,
             height: 40,
             background: '#EEE',
-            borderRadius: '50%',
-           
+            borderRadius: '50%', 
           }}
         />
         <div style={{ flex: 1 }}>

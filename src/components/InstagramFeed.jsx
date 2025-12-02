@@ -21,7 +21,7 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
+    <section style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/somosfuerzainterna/"
@@ -40,7 +40,6 @@ const InstagramFeed = () => {
       >
         <div style={{ padding: '16px' }}>
           <a
-            href="deigamer_original/"
             style={{
               background: '#FFFFFF',
               lineHeight: 0,
