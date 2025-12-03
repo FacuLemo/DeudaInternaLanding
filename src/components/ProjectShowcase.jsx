@@ -1,9 +1,9 @@
 import "./ProjectShowcase.css";
 import MercadoPagoButton from "./ButtonMercadoPago";
 
-const ProjectShowcase = ({ title, body, inverted = false, image, imageAlt, video }) => {
-  if (image && video) {
-    console.warn("ProjectShowcase: No se pueden usar 'image' y 'video' al mismo tiempo. Se usará la imagen.");
+const ProjectShowcase = ({ title, body, inverted = false, image, imageAlt, embedYoutubeUrl }) => {
+  if (image && embedYoutubeUrl) {
+    console.warn("ProjectShowcase: No se pueden usar 'image' y 'embedYoutubeUrl' al mismo tiempo. Se usará la imagen.");
   }
 
   const renderMedia = () => {
@@ -15,17 +15,10 @@ const ProjectShowcase = ({ title, body, inverted = false, image, imageAlt, video
           className="showcase-media"
         />
       );
-    } else if (video) {
+    } else if (embedYoutubeUrl) {
       return (
-        <video
-          className="showcase-media"
-          controls
-          preload="metadata"
-          poster={"/" + video}
-        >
-          <source src={"/" + video} type="video/mp4" />
-          Tu navegador no soporta videos HTML5.
-        </video>
+      <iframe 
+      width="560" height="315" src={embedYoutubeUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       );
     } else {
       return (
