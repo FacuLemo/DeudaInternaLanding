@@ -12,7 +12,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo-container">
-          <img src='/logo.png' className='logo-img' alt="Logo de Deuda Interna" />
+          <img src='/DeudaInternaLanding/logo.png' className='logo-img' alt="Logo de Deuda Interna" />
         </div>
 
         <nav className={`main-nav ${isMenuOpen ? 'nav-open' : ''}`}>
