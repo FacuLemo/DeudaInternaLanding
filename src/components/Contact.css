@@ -1,0 +1,27 @@
+.contact-section {
+  background-color: var(--primary-color);
+  margin-bottom: 3em;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 3em;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .socials {
+    flex-direction: column;
+  }
+}

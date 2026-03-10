@@ -1,0 +1,39 @@
+/* --- ESTILOS GLOBALES Y VARIABLES --- */
+:root {
+  --primary-color: #24343a; /* Un color oscuro y serio */
+  --secondary-color: #c1a57b; /* Un tono dorado/tierra para acentos */
+  --text-color: #f4f4f4; /* Texto claro para contrastar */
+  --background-color: #1a1a1a; /* Fondo para las secciones */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin:0;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
