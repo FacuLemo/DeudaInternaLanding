@@ -3,7 +3,7 @@ import "./ButtonMercadoPago.css";
 import { SvgMercadoPago } from "./SvgMercadoPago.jsx";
 
 export default function MercadoPagoButton({
-  href = "https://link.mercadopago.com.ar/facufel",
+  href = "http://link.mercadopago.com.ar/funddeudainterna",
   children = "Colaborá desde Mercado Pago",
   className = "",
   target = "_blank",

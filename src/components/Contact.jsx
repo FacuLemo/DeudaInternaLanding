@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="contact-info">
         <p>
           <strong>Email:</strong>{" "}
-          <a href="mailto:info@deudainterna.org">info@deudainterna.org</a>
+          <a href="mailto:fundaciondeudainternaorg@gmail.com">fundaciondeudainternaorg@gmail.com</a>
         </p>
         <p>
           <strong>Teléfono:</strong> +1 (234) 567-890
