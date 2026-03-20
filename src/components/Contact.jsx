@@ -43,16 +43,10 @@ const Contact = () => {
         </div>
 
         <div className="contact-social-column">
-          <div className="social-tabs">
-            <h3 className="social-header">Nuestra Comunidad</h3>
-            <div className="feeds-wrapper">
-              <div className="feed-box">
-                <FacebookFeed />
-              </div>
-              <div className="feed-box">
-                <InstagramFeed />
-              </div>
-            </div>
+          <h3 className="social-header">Nuestra Comunidad</h3>
+          <div className="feeds-wrapper">
+            <InstagramFeed />
+            <FacebookFeed />
           </div>
         </div>
 
