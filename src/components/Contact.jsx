@@ -1,30 +1,63 @@
 import "./Contact.css";
-import InstagramFeed from "../components/InstagramFeed";
-import FacebookFeed from "../components/FacebookFeed";
+import InstagramFeed from "./InstagramFeed";
+import FacebookFeed from "./FacebookFeed";
 
 const Contact = () => {
   return (
-    <section id="contact" className="section contact-section">
-      <h1>Contacto</h1>
-      <p>
-        Si quieres colaborar, donar o necesitas más información, no dudes en
-        escribirnos.
-      </p>
-      <div className="contact-info">
-        <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:fundaciondeudainternaorg@gmail.com">fundaciondeudainternaorg@gmail.com</a>
-        </p>
-        <p>
-          <strong>Teléfono:</strong> +1 (234) 567-890
-        </p>
-        <p>
-          <strong>Dirección:</strong> Calle Ficticia 123, Ciudad Ejemplo
-        </p>
-      </div>
-      <div className="socials">
-        <FacebookFeed />
-        <InstagramFeed />
+    <section id="contact" className="contact-section">
+      <div className="contact-container">
+
+        {/* COLUMNA IZQUIERDA: Info oficial */}
+        <div className="contact-info-column">
+          <span className="contact-subtitle">Hablemos</span>
+          <h2 className="contact-title">Ponte en Contacto</h2>
+          <p className="contact-description">
+            Si quieres colaborar, donar o necesitas más información sobre nuestros proyectos,
+            estamos aquí para escucharte.
+          </p>
+
+          <div className="info-cards-container">
+            <div className="info-item">
+              <div className="info-icon">📧</div>
+              <div className="info-text">
+                <label>Email</label>
+                <a href="mailto:fundaciondeudainternaorg@gmail.com">fundaciondeudainternaorg@gmail.com</a>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">📞</div>
+              <div className="info-text">
+                <label>Teléfono</label>
+                <span>+1 (234) 567-890</span>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">📍</div>
+              <div className="info-text">
+                <label>Ubicación</label>
+                <span>Calle Ficticia 123, Ciudad Ejemplo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* COLUMNA DERECHA: Social Feeds */}
+        <div className="contact-social-column">
+          <div className="social-tabs">
+            <h3 className="social-header">Nuestra Comunidad</h3>
+            <div className="feeds-wrapper">
+              <div className="feed-box">
+                <FacebookFeed />
+              </div>
+              <div className="feed-box">
+                <InstagramFeed />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

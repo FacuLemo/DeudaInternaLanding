@@ -1,27 +1,122 @@
 .contact-section {
-  background-color: var(--primary-color);
-  margin-bottom: 3em;
+  padding: 100px 20px;
+  background-color: #0a0a0a; /* Fondo coherente con el resto */
 }
 
-.contact-info {
-  margin-top: 20px;
-  font-size: 1.1rem;
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Info a la izq, social a la derecha */
+  gap: 80px;
+  align-items: start;
 }
 
-.contact-info a {
+/* Columna de Información */
+.contact-subtitle {
   color: var(--secondary-color);
-  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-.socials {
-  margin-top: 3em;
+.contact-title {
+  font-size: 3rem;
+  color: white;
+  margin: 10px 0 20px 0;
+}
+
+.contact-description {
+  color: #b6b6b6;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.info-cards-container {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
 }
 
-@media (max-width: 768px) {
-  .socials {
-    flex-direction: column;
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.info-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  background: rgba(193, 165, 123, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.info-text label {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.info-text span, .info-text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Columna de Redes Sociales */
+.social-header {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.feeds-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 800px; /* Limitamos la altura total de los feeds */
+  overflow-y: auto; /* Scroll interno para no alargar toda la web */
+  padding-right: 10px;
+}
+
+/* Estilización del scroll de los feeds */
+.feeds-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.feeds-wrapper::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .contact-info-column {
+    text-align: center;
+  }
+
+  .info-item {
+    text-align: left;
   }
 }
