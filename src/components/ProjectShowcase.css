@@ -85,7 +85,6 @@
   justify-content: center;
 }
 
-/* Responsivo */
 @media (max-width: 900px) {
   .showcase-container {
     grid-template-columns: 1fr;

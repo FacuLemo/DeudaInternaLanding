@@ -7,7 +7,6 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <div className="contact-container">
 
-        {/* COLUMNA IZQUIERDA: Info oficial */}
         <div className="contact-info-column">
           <span className="contact-subtitle">Hablemos</span>
           <h2 className="contact-title">Ponte en Contacto</h2>
@@ -43,7 +42,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* COLUMNA DERECHA: Social Feeds */}
         <div className="contact-social-column">
           <div className="social-tabs">
             <h3 className="social-header">Nuestra Comunidad</h3>

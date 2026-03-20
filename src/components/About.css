@@ -75,10 +75,9 @@
   margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-grid {
-    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    grid-template-columns: 1fr;
   }
   
   .about-section {

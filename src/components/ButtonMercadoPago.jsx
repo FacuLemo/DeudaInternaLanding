@@ -1,4 +1,3 @@
-import React from "react";
 import "./ButtonMercadoPago.css";
 import { SvgMercadoPago } from "./SvgMercadoPago.jsx";
 

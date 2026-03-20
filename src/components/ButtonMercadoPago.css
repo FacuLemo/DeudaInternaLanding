@@ -51,7 +51,6 @@
     }
     
     
-    /* Small / compact variant */
     .mp-button.mp-compact {
     padding: 6px 10px;
     border-radius: 10px;
@@ -59,7 +58,6 @@
     }
     
     
-    /* Disabled look (if you want to disable via CSS class) */
     .mp-button[aria-disabled="true"],
     .mp-button.disabled {
     opacity: 0.6;
