@@ -71,11 +71,6 @@
   flex-shrink: 0;
 }
 
-.info-text {
-  min-width: 0;
-  flex: 1;
-}
-
 .info-text label {
   display: block;
   color: #666;
@@ -93,70 +88,58 @@
   word-break: break-all;
 }
 
-.contact-social-column {
-  width: 100%;
-}
-
+/* Título de la sección de redes */
 .social-header {
-  color: white;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2rem); /* Tamaño fluido */
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Opcional: Una pequeña línea decorativa debajo del título */
+.social-header::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #c1a57b; /* El dorado que usas en el subtítulo */
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Contenedor de los feeds para que se vean uno al lado del otro */
 .feeds-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  justify-content: center;
-}
-
-.facebook-widget-container, 
-.instagram-widget-container {
+  justify-items: center; /* Centra los widgets si sobran espacios */
+  align-items: start;
   width: 100%;
-  max-width: 450px;
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.fb-no-scroll-window,
-.ig-no-scroll-window {
-  height: 500px;
-  overflow: hidden;
-  position: relative;
+/* Ajuste para la columna social en general */
+.contact-social-column {
+  width: 100%;
+  margin-top: 20px;
 }
 
-.fb-view-more-btn,
-.ig-view-more-btn {
-  display: block;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.95rem;
-  transition: opacity 0.3s;
-  color: white !important;
+/* Responsive: Menos margen en móviles */
+@media (max-width: 768px) {
+  .social-header {
+    margin-bottom: 30px;
+  }
+  .feeds-wrapper {
+    gap: 40px; /* Más espacio vertical entre widgets al apilarse */
+  }
+}@media (max-width: 768px) {
+  .contact-section { padding: 60px 15px; }
+  .info-cards-container { grid-template-columns: 1fr; }
+  .feeds-wrapper { grid-template-columns: 1fr; }
 }
-
-.fb-view-more-btn { background: #0866FF; }
-.ig-view-more-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-.fb-view-more-btn:hover, .ig-view-more-btn:hover { opacity: 0.9; }
-
-.fb-skeleton {
-  background: #1a1a1a;
-  padding: 20px;
-  height: 500px;
-}
-.fb-skeleton-header { display: flex; gap: 15px; margin-bottom: 20px; }
-.fb-skeleton-avatar { width: 40px; height: 40px; background: #333; border-radius: 50%; }
-.fb-skeleton-lines .line-long { height: 10px; width: 120px; background: #333; margin-bottom: 8px; border-radius: 4px; }
-.fb-skeleton-lines .line-short { height: 10px; width: 60px; background: #333; border-radius: 4px; }
-.fb-skeleton-body { width: 100%; height: 300px; background: #333; border-radius: 8px; }
 
 @media (max-width: 768px) {
   .contact-section { padding: 60px 15px; }
