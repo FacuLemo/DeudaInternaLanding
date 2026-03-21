@@ -1,18 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'header-scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo-container">
-          <img src='/DeudaInternaLanding/logo.png' className='logo-img' alt="Logo de Deuda Interna" />
+          <img src='/DeudaInternaLanding/logo.png' className='logo-img' alt="Logo" />
         </div>
 
         <nav className={`main-nav ${isMenuOpen ? 'nav-open' : ''}`}>
@@ -22,19 +29,13 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button
-          className="menu-toggle"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-          aria-expanded={isMenuOpen}
-        >
-          {isMenuOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-          )}
+        <button className={`menu-toggle ${isMenuOpen ? 'toggle-active' : ''}`} onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </button>
       </div>
+      {isMenuOpen && <div className="nav-overlay" onClick={toggleMenu}></div>}
     </header>
   );
 };
