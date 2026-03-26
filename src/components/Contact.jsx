@@ -36,7 +36,7 @@ const Contact = () => {
               <div className="info-icon">📍</div>
               <div className="info-text">
                 <label>Ubicación</label>
-                <span>Las Heras 678, Río Cuarto CBA</span>
+                <span>Av Cavalani s/n, José de la Quintana, Córdoba</span>
               </div>
             </div>
           </div>
