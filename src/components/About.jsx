@@ -12,8 +12,7 @@ const About = () => {
 
         <div className="about-grid">
           <div className="about-card">
-            <div className="card-icon">🎯</div>
-            <h3>Nuestra Misión</h3>
+            <h3>🎯 Nuestra Misión</h3>
             <p>
               Trabajar por el desarrollo integral de comunidades en situación de vulnerabilidad,
               promoviendo el acceso a recursos esenciales como el agua potable, la salud y la educación.
@@ -21,9 +20,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="about-card">
-            <div className="card-icon">👁️</div>
-            <h3>Nuestra Visión</h3>
+          <div className="about-card">    
+            <h3>👁️ Nuestra Visión</h3>
             <p>
               Construir una sociedad más justa y equitativa, donde todas las comunidades accedan a
               recursos básicos para vivir con dignidad. Aspiramos a ser referentes en impacto social,
