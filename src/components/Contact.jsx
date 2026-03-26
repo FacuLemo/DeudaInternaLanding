@@ -28,7 +28,7 @@ const Contact = () => {
               <div className="info-icon">📞</div>
               <div className="info-text">
                 <label>Teléfono</label>
-                <span>+1 (234) 567-890</span>
+                <span>+54 (358) 4320300</span>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ const Contact = () => {
               <div className="info-icon">📍</div>
               <div className="info-text">
                 <label>Ubicación</label>
-                <span>Calle Ficticia 123, Ciudad Ejemplo</span>
+                <span>Las Heras 678, Río Cuarto CBA</span>
               </div>
             </div>
           </div>
