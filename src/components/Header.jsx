@@ -19,7 +19,7 @@ const Header = () => {
     <header className={`header ${scrolled ? 'header-scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo-container">
-          <img src='/DeudaInternaLanding/logo.png' className='logo-img' alt="Logo" />
+          <img src='./logo.png' className='logo-img' alt="Logo" />
         </div>
 
         <nav className={`main-nav ${isMenuOpen ? 'nav-open' : ''}`}>

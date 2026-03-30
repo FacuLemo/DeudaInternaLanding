@@ -8,7 +8,7 @@ const ProjectShowcase = ({ title, body, inverted = false, image, imageAlt, embed
     if (image) {
       return (
         <img
-          src={`/DeudaInternaLanding/${image}`}
+          src={`./${image}`}
           alt={imageAlt || title}
           className={mediaClass}
         />
