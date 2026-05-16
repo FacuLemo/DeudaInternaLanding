@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './InstagramFeed.css'
 
-const InstagramFeed = ({ postUrl = "https://www.instagram.com/somosfuerzainterna/" }) => {
+const InstagramFeed = ({ postUrl = "https://www.instagram.com/deudainterna.ar/" }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
